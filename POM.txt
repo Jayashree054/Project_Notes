@@ -1,0 +1,61 @@
+POJO Class 
+
+Plain Old Java Object 
+
+We can access private variables using pojo class by generating getters and setters.
+
+Encapsulation Process
+
+Getters and Setters : 
+
+R.C --> source -> generate getters and setters
+
+************************************************************************************
+
+
+POM
+
+Page Object Model - POM
+
+
+WebElement refName=driver.findElement(By.Locators("values"));
+WebElement signin = driver.findElement(By.xpath("//a[@class='login']"));
+
+Create package & Java Class based on webpage. eg: automationpractise in SRC/MAIN/Java
+
+Step 1: @FindBy --> replacement of FindElement
+
+	@FindBy(locators="values")
+	private WebElement refName;
+
+Step 2: Generate Getters
+
+Step 3: Need to create object in main.method pgm.
+
+Step 4: use the object and call the methodes which used in Getters
+
+******************************************************************************************************************************
+
+Singleton Design Patteren: SDP
+
+Step 1: create seperate package and class to collect all object in single class
+
+Step 2: private class name object name
+
+step 3: create manual getter menthods for available class
+
+step 4: Create a one object in runner class to invoke collected objects
+
+step 5: use new object and call all the methods
+
+***********************************************************************************************************************
+
+Base Class: Collection of reusable methods
+
+POJO: Collection of Variables
+
+POM: Collection of WebElemnts
+
+SDP: Collection of Object
+
+************************************************************************************************************************
